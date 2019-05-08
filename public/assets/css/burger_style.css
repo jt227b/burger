@@ -1,9 +1,9 @@
 body{
-    background-color: turquoise;
+    background: turquoise;
 }
 
 .burgers-list{
-    margin-top: 12rem;
+    margin-top: 15rem;
 }
 
 .burger-item{

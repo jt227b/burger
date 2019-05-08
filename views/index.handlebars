@@ -6,18 +6,18 @@
             <ul class="list-group">
                 {{#each burgers}}
                     {{#unless devoured}}
-                        {{> burger/block devour=true}}
+                        {{> burgers/burger-block devour=true}}
                     {{/unless}}
                 {{/each}}
             </ul>
         </div>
         <div class="col-4 text-center mt-5">
             <h1 class="display-4"><strong>Eat-Da-Burger</strong></h1>
-            <img src="/public/assets/image/babybusburger.jpg" class="img-fluid" alt="burger pic">
+            <img src="../public/assets/image/burger.png" class="img-fluid" alt="stacked Burger">
             <h2 class="mt-5">Hungry?</h2>
             <form id="burger-form">
                 <div class="form-group">
-                    <label for="burger-input">Add a burger to your Menu!</label>
+                    <label for="burger-input">Add a Burger to your Menu</label>
                     <input type="text" class="form-control" id="burger-input" required>
                 </div>
                 <button type="submit" class="btn btn-danger">Submit</button>
@@ -29,7 +29,7 @@
             <ul class="list-group">
                 {{#each burgers}}
                     {{#if devoured}}
-                        {{> burger/block devour=false}}
+                        {{> burgers/burger-block devour=false}}
                     {{/if}}
                 {{/each}}
             </ul>

@@ -4,6 +4,7 @@ var router = express.Router();
 
 var burger = require("../models/burger");
 
+
 router.get("/", function (req, res) {
     burger.all(function (data) {
         var hbsObject = {
@@ -27,15 +28,15 @@ router.put("/burgers/:id", function (req, res) {
 
     burger.update({
         devoured: req.body.devoured
-    },
-        id, function (result) {
-            if (result.changedRows == 0) {
-
-                return res.status(404).end();
-            } else {
-                res.status(200).end();
-            }
-        });
+    }, 
+    id, function (result) {
+        if (result.changedRows == 0) {
+  
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    });
 });
 
 router.delete("/burgers/:id", function (req, res) {
@@ -43,7 +44,7 @@ router.delete("/burgers/:id", function (req, res) {
 
     burger.delete(id, function (result) {
         if (result.affectedRows == 0) {
-
+ 
             return res.status(404).end();
         } else {
             res.status(200).end();
