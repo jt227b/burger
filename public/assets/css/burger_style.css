@@ -5,16 +5,19 @@
     margin-top: 0px;
     border: 2px;
     border-style: double;
+    background-color: black;
+    text-align: center;
+    background-image: url("http://blog.etundra.com/wp-content/Media/2016/05/restaurant-busy-dining-room.jpg")
 }
 
 body {
-    background-color: #E81B20;
+    
     background-image: url("https://www.solidbackgrounds.com/images/2048x2048/2048x2048-baby-blue-solid-color-background.jpg");
     background-size: cover;
 }
 
 .jumbotron > h1 {
-    font-family: 'Fontdiner Swanky';
+    font-family: 'Permanent Marker', cursive;
     color: black;
 }
 
@@ -27,7 +30,7 @@ body {
 }
 
 .panel-body {
-    background-color: #F1AF6A;
+    background-color:whitesmoke;
 }
 
 #jumboText {
@@ -37,11 +40,11 @@ body {
 }
 
 #burgerOrders {
-    background-color: #8BC63E;
+    background-color: rgb(70, 177, 226);
     color: white;
     text-align: center;
     font-size: 1.2em;
-    font-family: 'Fontdiner Swanky';
+    font-family: 'Permanent Marker', cursive;
 }
 
 #eatbutton, #trashbutton {
@@ -50,9 +53,9 @@ body {
 }
 
 #burgersEaten {
-    background-color: #E81B20;
+    background-color: rgb(70, 177, 226);
     color: white;
     text-align: center;
     font-size: 1.2em;
-    font-family: 'Fontdiner Swanky';
+    font-family: 'Permanent Marker', cursive;
 }
